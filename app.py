@@ -8,6 +8,15 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+@app.route('/guestbook')
+def guestbook():
+    return render_template('guestbook.html')
+
+@app.route('/room1')
+def room1():
+    return render_template('room1.html')
+
+
 @app.route("/homework", methods=["POST"])
 def homework_post():
     nickname_receive = request.form['nickname_give']
