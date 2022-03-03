@@ -4,6 +4,11 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+
+    <meta property="og:title" content="미스테리 방명록"/>
+    <meta property="og:description" content="연습용입니다."/>
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2016/01/22/11/50/live-escape-game-1155620_960_720.jpg"/>
+
     <title>Material Design for Bootstrap</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
@@ -191,7 +196,7 @@
                                     src="https://mdbootstrap.com/img/new/standard/nature/184.jpg"
                                     class="img-fluid"
                             />
-                            <a href="#!">
+                            <a href="{{url_for('room1')}}">
                                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                             </a>
                         </div>
@@ -201,7 +206,7 @@
                                 Some quick example text to build on the card title and make up the bulk of the
                                 card's content.
                             </p>
-                            <a href="#!" class="btn btn-primary">시작</a>
+                            <a href="{{url_for('room1')}}" class="btn btn-primary">시작</a>
                         </div>
                     </div>
                 </div>
